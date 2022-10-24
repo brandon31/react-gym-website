@@ -50,18 +50,18 @@ export const paragraphStyle = {
   margin: '.4rem',
 }
 
-const PriceTable = ({ price, type, content }) => {
+const PriceTable = (props) => {
     return (
         <>
           <div className="price-table">
             <header style={headerStyle} >
 
-              <p style={firstPStyle} >{price}</p>
+              <p style={firstPStyle} >{props.price}</p>
 
-              <p style={typeStyle} >{type}</p>
+              <p style={typeStyle} >{props.type}</p>
             </header>
 
-            <p className='para'>{content}</p>
+            <p className='para'>{props.content}</p>
             <button style={buttonStyle} >SUBSCRIBE</button>
           </div>
         </>

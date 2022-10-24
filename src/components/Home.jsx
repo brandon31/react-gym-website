@@ -73,6 +73,13 @@ const ACTIONS = {
   REMOVE_OVERLAY: 'remove-overlay',
 }
 
+const initialState = {
+  membershipModal: false, 
+  overlay: false, 
+  contactModal: false, 
+  notification: false
+}
+
 function reducer(state, action) {
   switch(action.type) {
 
@@ -107,8 +114,7 @@ function reducer(state, action) {
 
 const Home = () => {
 
-  const [state, dispatch] = useReducer(reducer, 
-  { membershipModal: false, overlay: false, contactModal: false, notification: false });
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const nameRef = useRef();
   const emailRef = useRef();

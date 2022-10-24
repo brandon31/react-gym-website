@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fasthand&family=Fuzzy+Bubbles&family=Great+Vibes&family=Island+Moments&family=Josefin+Sans:wght@300&family=Lato:wght@300&family=Noto+Sans:wght@300&family=Nunito&family=Poppins:wght@300&family=Roboto:wght@300&family=Shalimar&family=Tangerine&display=swap'); */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nosifer&family=Nunito+Sans:wght@300&family=Poppins:wght@300&family=Roboto+Mono&family=Source+Sans+Pro&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fasthand&family=Fuzzy+Bubbles&family=Great+Vibes&family=Island+Moments&family=Josefin+Sans:wght@300&family=Lato:wght@300&family=Noto+Sans:wght@300&family=Nunito&family=Poppins:wght@300&family=Roboto:wght@300&family=Shalimar&family=Tangerine&display=swap');
 
 * {
     box-sizing: border-box;
@@ -35,9 +32,8 @@
 }
 .nav-bar p {
     font-size: 2rem;
-    font-family: arial;
     margin: 1.5rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .nav-bar p span {
     color: var(--child-color);
@@ -329,6 +325,8 @@
     position: absolute;
     right: -5%;
     top: -30%;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
     animation: message;
     animation-duration: .6s;
     transition: all .6s ease;

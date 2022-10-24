@@ -1,6 +1,6 @@
 
 const checkCircleIconStyle = {
-    color: 'lime',
+    color: 'green',
     marginLeft: '.5rem',
 }
 
