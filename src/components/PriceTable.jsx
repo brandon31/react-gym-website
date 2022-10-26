@@ -62,7 +62,7 @@ const PriceTable = (props) => {
             </header>
 
             <p className='para'>{props.content}</p>
-            <button style={buttonStyle} >SUBSCRIBE</button>
+            <button style={buttonStyle}>SUBSCRIBE</button>
           </div>
         </>
     );

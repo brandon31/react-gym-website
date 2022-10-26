@@ -189,6 +189,7 @@
     background: linear-gradient(to right, #00AAFF, #00FF6C);
     position: absolute;
     top: -20%;
+    left: 3%;
     margin: auto;
     color: #000;
     animation: membership;
@@ -228,7 +229,7 @@
     background-color: rgba(255, 255, 255, .5);
     border-radius: 1rem;
     width: 14rem;
-    box-shadow: 0px 0px 15px #888;
+    box-shadow: 0px 0px 15px #555;
     height: 30rem;
     font-family: 'Nunito', sans-serif;
     color: rgba(0, 0, 0, .75);
@@ -620,7 +621,7 @@
         background-color: rgba(255, 255, 255, .5);
         border-radius: 1rem;
         width: 10rem;
-        box-shadow: 0px 0px 15px #888;
+        box-shadow: 0px 0px 15px #666;
         height: 30rem;
         font-family: 'Nunito', sans-serif;
         color: rgba(0, 0, 0, .75);
@@ -635,7 +636,6 @@
         justify-content: center;
         flex-direction: column;
         border-radius: 1rem 1rem 0rem 0rem;
-        color: red;
         margin-bottom: 1rem;
     }
     .price-table header p {
