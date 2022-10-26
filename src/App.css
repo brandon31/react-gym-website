@@ -619,14 +619,27 @@
         flex-direction: column;
         background-color: rgba(255, 255, 255, .5);
         border-radius: 1rem;
-        width: 8rem;
+        width: 10rem;
         box-shadow: 0px 0px 15px #888;
         height: 30rem;
         font-family: 'Nunito', sans-serif;
         color: rgba(0, 0, 0, .75);
     }
-    .price-table header {
-
+    .price-table .header {
+        background-color: #f1f1f1;
+        width: 8rem;
+        height: 5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1rem 1rem 0rem 0rem;
+        color: red;
+        margin-bottom: 1rem;
+    }
+    .price-table header p {
+        font-size: .5rem;
     }
     .price-table p {
         font-size: .5rem;

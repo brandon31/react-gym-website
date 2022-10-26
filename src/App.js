@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Card from './components/Card';
 import Home from './components/Home';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Card title='HEALTHY DIET PLAN' textContent="The best diet for losing weight while working out is one that includes high-quality foods that are unrefined and minimally processed. A balanced diet should include plenty of fruits and vegetables, whole grains, healthy (unsaturated) fats, and healthy protein sources." />
       </div>      
     </div>
+    <Footer />
     </>
   );
 }

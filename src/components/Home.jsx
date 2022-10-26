@@ -116,9 +116,9 @@ const Home = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const messageRef = useRef();
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
 
   const validation = () => {
     nameRef.current.focus();
@@ -140,7 +140,6 @@ const Home = () => {
         })
       }
     })
-    
   }
 
   const premiumPerks = ['Access to equipments', 'All weather workout', 'Monetary motivation', 'Personal Trainers', 'Fitness classes', 'Fewer distractions', 'Practical equipments', 'Individual coaching']
@@ -178,6 +177,7 @@ const Home = () => {
              dispatch({ type: ACTIONS.CLOSE_MEMBERSHIP })
              dispatch({ type: ACTIONS.REMOVE_OVERLAY })
           }} style={cancelButtonStyle} >X</button>
+
         <div className='text-content'>
           <PriceTable price='FREE' type='BASIC' content={freePerks.map(free => <p style={paragraphStyle} >{free} <CheckCircle /></p>)} />
           <PriceTable price='$9.99' type='STANDARD' content={standardPerks.map(standard => <p style={paragraphStyle}>{standard} <CheckCircle /> </p> )} />
@@ -201,6 +201,7 @@ const Home = () => {
             <textarea name="message" placeholder='Message' id="" cols="50" rows="8" ref={messageRef} ></textarea>
             <button onClick={sendMessage} >SEND</button>
           </form>
+          
         </div> : "" }
         </div>
         </>

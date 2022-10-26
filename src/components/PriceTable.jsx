@@ -54,7 +54,7 @@ const PriceTable = (props) => {
     return (
         <>
           <div className="price-table">
-            <header style={headerStyle} >
+            <header className='header' style={headerStyle} >
 
               <p style={firstPStyle} >{props.price}</p>
 
